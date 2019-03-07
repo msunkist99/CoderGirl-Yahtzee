@@ -136,11 +136,15 @@ namespace Yahtzee
         {
             if ((savedDice.Length) > 0)
             {
-                Console.Write($"{playerName} - saved dice are ");
+                Console.Write($"{playerName} - saved dice are {string.Join(", ", savedDice)}");
+               
+                /*
                 for (int i = 0; i < savedDice.Length; i++)
                 {
                     Console.Write($"{savedDice[i]}, ");
                 }
+                */
+
                 Console.WriteLine();
                 Console.WriteLine();
             }
